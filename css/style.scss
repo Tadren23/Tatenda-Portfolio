@@ -1,0 +1,362 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+body{
+  background-color: #000;
+}
+
+#hero {
+  height: 100vh;
+  width: 100%;
+  background-color: #000;
+  position: relative;
+
+  .logo {
+
+    h2 {
+      background: -webkit-linear-gradient(#01C1FE, #00FF62, );
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: 'Autumn Flowers';
+      letter-spacing: 1px;
+      font-size: 58px;
+      padding: 20px 40px;
+    }
+  }
+
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 40px;
+    z-index: 10;
+
+
+
+
+
+    ul {
+      li {
+        list-style-type: none;
+        display: inline-block;
+        padding-right: 50px;
+        font-family: 'pop';
+        font-size: 20px;
+
+
+
+
+
+        a {
+          color: white;
+          text-decoration: none;
+
+
+        }
+
+        a:hover {
+          color: #01C1FE;
+          transition: .3s;
+        }
+      }
+    }
+  }
+
+  .hero-inner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    text-align: center;
+
+    .content {
+      z-index: 2;
+
+      h5 {
+        font-size: 35px;
+        color: #fff;
+        font-family: 'semi';
+        letter-spacing: 6px;
+      }
+
+
+      h1 {
+        text-align: center;
+        font-size: 100px;
+        letter-spacing: 3px;
+        color: transparent;
+        text-transform: uppercase;
+        background-image: url(../img/Opengraph-min.png);
+        background-clip: text;
+        background-position: center;
+        font-family: 'extra';
+
+      }
+
+
+      p {
+        color: #fff;
+        padding-bottom: 40px;
+        font-size: 30px;
+        font-family: 'pin';
+
+
+
+      }
+
+      button {
+        border-color: #01C1FE;
+        background-color: #000;
+        color: #fff;
+        font-weight: 500px;
+        padding: 15px 40px;
+        border-radius: 12px;
+      }
+
+      button:hover {
+        background: linear-gradient(#006CFF, #0514c2);
+        transition: .3s;
+      }
+    }
+
+    .rectangle {
+      position: absolute;
+      right: 20px;
+      width: 38%;
+      z-index: 1;
+      padding-bottom: 50px;
+      animation: lavitate 5s alternate-reverse infinite;
+
+
+      @keyframes lavitate {
+        50% {
+          padding-top: 10%;
+        }
+
+      }
+    }
+
+    .rect2 {
+      position: absolute;
+      right: 20px;
+      width: 38%;
+      z-index: 1;
+      padding-bottom: 50px;
+      animation: levitate 5s reverse infinite;
+      opacity: .5;
+
+      @keyframes levitate {
+        50% {
+          padding-bottom: 10%;
+        }
+      }
+
+    }
+  }
+}
+
+// end of hero
+
+
+//start about
+
+
+#About {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+
+
+  .about-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(#000, #000),
+      linear-gradient(to right, #0074F6, #00FD65);
+    background-origin: padding-box, border-box;
+    background-repeat: no-repeat;
+    /* this is important */
+    border: 8px solid transparent;
+    border-radius: 5px;
+    width: 80%;
+    height: 85vh;
+    gap: 100px;
+    padding: 30px;
+    position: relative;
+
+
+    h1 {
+      background: -webkit-linear-gradient(#01C1FE, #00FF62, );
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: 'extra';
+      font-size: 78px;
+    }
+
+    p {
+      color: #fff;
+      font-size: 16px;
+      padding-bottom: 15px;
+      font-family: 'pin';
+    }
+
+    h3 {
+      color: #fff;
+      font-family: 'semi';
+      font-size: 35px;
+    }
+
+    .line {
+      // height: 5%;
+      position: absolute;
+      left: 42%;
+      transform: translateX(-50%);
+      top: 22%;
+
+      svg {
+        height: 400px;
+      }
+    }
+
+
+  }
+
+
+}
+
+// end of about
+
+.Skills {
+  width: 100%;
+  height: 100vh;
+
+  h1{
+    font-size: 68px;
+    background: -webkit-linear-gradient(#3c6cf0, #00FF62, );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'extra';
+    text-align: center;
+    letter-spacing: 3px;
+
+  }
+  p{
+    color: #fff;
+    font-size: 24px;
+    font-family: 'pin';
+    text-align: center;
+    line-height: 24px;
+   
+  }
+
+  .skills-2{
+   background-image: linear-gradient(-190deg,#3c6cf0, #025120);
+   width: 540px;
+   height: 450px;
+   background-repeat: no-repeat;
+   border-radius: 16px;
+   align-items: center;
+  margin-top: 30px;
+  
+   
+   
+
+   h3{
+    font-size: 30px;
+    font-family:'semi' ;
+    color: #fff;
+    text-align: center;
+    padding-top: 30px;
+  }
+   .icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px 40px;
+
+    .three{
+      padding-top: 30px;
+    }
+    .four{
+      padding-top: 30px;
+    }
+    
+   
+   
+    p{
+      color: #fff;
+      font-family: 'light';
+      font-size: 18px;
+      line-height: 18px;
+      text-align: center;
+      letter-spacing: 1px;
+
+
+    }
+    
+
+   }
+
+  }
+  
+  
+}
+
+
+.progress-bar-container:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.progress-bar-container h2 {
+  font-family: 'pop';
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.progress-bar {
+  width: 500px;
+  height: 20px;
+  margin-top: 10px;
+  border: 1px ;
+  border-radius: 5px;
+  box-shadow: 0 0 15px #34be69;
+  background-color: transparent;
+}
+
+.percentage {
+  display: block;
+  height: 100%;
+  background-color: #17ba55;
+  border-radius: 5px;
+  animation: progress 1500ms ease-in 1;
+}
+
+.html {
+  width: 90%;
+}
+
+.css {
+  width: 75%;
+}
+
+.javascript {
+  width: 65%;
+}
+
+@keyframes progress {
+  from {
+    width: 0;
+  }
+}

@@ -1,0 +1,300 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+}
+
+#hero {
+  height: 100vh;
+  width: 100%;
+  background-color: #000;
+  position: relative;
+}
+#hero .logo h2 {
+  background: -webkit-linear-gradient(#01C1FE, #00FF62);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Autumn Flowers";
+  letter-spacing: 1px;
+  font-size: 58px;
+  padding: 20px 40px;
+}
+#hero nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 40px;
+  z-index: 10;
+}
+#hero nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding-right: 50px;
+  font-family: "pop";
+  font-size: 20px;
+}
+#hero nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+#hero nav ul li a:hover {
+  color: #01C1FE;
+  transition: 0.3s;
+}
+#hero .hero-inner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  text-align: center;
+}
+#hero .hero-inner .content {
+  z-index: 2;
+}
+#hero .hero-inner .content h5 {
+  font-size: 35px;
+  color: #fff;
+  font-family: "semi";
+  letter-spacing: 6px;
+}
+#hero .hero-inner .content h1 {
+  text-align: center;
+  font-size: 100px;
+  letter-spacing: 3px;
+  color: transparent;
+  text-transform: uppercase;
+  background-image: url(../img/Opengraph-min.png);
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-position: center;
+  font-family: "extra";
+}
+#hero .hero-inner .content p {
+  color: #fff;
+  padding-bottom: 40px;
+  font-size: 30px;
+  font-family: "pin";
+}
+#hero .hero-inner .content button {
+  border-color: #01C1FE;
+  background-color: #000;
+  color: #fff;
+  font-weight: 500px;
+  padding: 15px 40px;
+  border-radius: 12px;
+}
+#hero .hero-inner .content button:hover {
+  background: linear-gradient(#006CFF, #0514c2);
+  transition: 0.3s;
+}
+#hero .hero-inner .rectangle {
+  position: absolute;
+  right: 20px;
+  width: 38%;
+  z-index: 1;
+  padding-bottom: 50px;
+  animation: lavitate 5s alternate-reverse infinite;
+}
+@-webkit-keyframes lavitate {
+  50% {
+    padding-top: 10%;
+  }
+}
+@keyframes lavitate {
+  50% {
+    padding-top: 10%;
+  }
+}
+#hero .hero-inner .rect2 {
+  position: absolute;
+  right: 20px;
+  width: 38%;
+  z-index: 1;
+  padding-bottom: 50px;
+  animation: levitate 5s reverse infinite;
+  opacity: 0.5;
+}
+@-webkit-keyframes levitate {
+  50% {
+    padding-bottom: 10%;
+  }
+}
+@keyframes levitate {
+  50% {
+    padding-bottom: 10%;
+  }
+}
+
+#About {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+#About .about-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(#000, #000), linear-gradient(to right, #0074F6, #00FD65);
+  background-origin: padding-box, border-box;
+  background-repeat: no-repeat;
+  /* this is important */
+  border: 8px solid transparent;
+  border-radius: 5px;
+  width: 80%;
+  height: 85vh;
+  gap: 100px;
+  padding: 30px;
+  position: relative;
+}
+#About .about-inner h1 {
+  background: -webkit-linear-gradient(#01C1FE, #00FF62);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "extra";
+  font-size: 78px;
+}
+#About .about-inner p {
+  color: #fff;
+  font-size: 16px;
+  padding-bottom: 15px;
+  font-family: "pin";
+}
+#About .about-inner h3 {
+  color: #fff;
+  font-family: "semi";
+  font-size: 35px;
+}
+#About .about-inner .line {
+  position: absolute;
+  left: 42%;
+  transform: translateX(-50%);
+  top: 22%;
+}
+#About .about-inner .line svg {
+  height: 400px;
+}
+
+.Skills {
+  width: 100%;
+  height: 100vh;
+}
+.Skills h1 {
+  font-size: 68px;
+  background: -webkit-linear-gradient(#3c6cf0, #00FF62);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "extra";
+  text-align: center;
+  letter-spacing: 3px;
+}
+.Skills p {
+  color: #fff;
+  font-size: 24px;
+  font-family: "pin";
+  text-align: center;
+  line-height: 24px;
+}
+.Skills .skills-2 {
+  background-image: linear-gradient(-190deg, #3c6cf0, #025120);
+  width: 540px;
+  height: 450px;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+  align-items: center;
+  margin-top: 30px;
+}
+.Skills .skills-2 h3 {
+  font-size: 30px;
+  font-family: "semi";
+  color: #fff;
+  text-align: center;
+  padding-top: 30px;
+}
+.Skills .skills-2 .icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px 40px;
+}
+.Skills .skills-2 .icons .three {
+  padding-top: 30px;
+}
+.Skills .skills-2 .icons .four {
+  padding-top: 30px;
+}
+.Skills .skills-2 .icons p {
+  color: #fff;
+  font-family: "light";
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.progress-bar-container:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.progress-bar-container h2 {
+  font-family: "pop";
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.progress-bar {
+  width: 500px;
+  height: 20px;
+  margin-top: 10px;
+  border: 1px;
+  border-radius: 5px;
+  box-shadow: 0 0 15px #34be69;
+  background-color: transparent;
+}
+
+.percentage {
+  display: block;
+  height: 100%;
+  background-color: #17ba55;
+  border-radius: 5px;
+  -webkit-animation: progress 1500ms ease-in 1;
+          animation: progress 1500ms ease-in 1;
+}
+
+.html {
+  width: 90%;
+}
+
+.css {
+  width: 75%;
+}
+
+.javascript {
+  width: 65%;
+}
+
+@-webkit-keyframes progress {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes progress {
+  from {
+    width: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
